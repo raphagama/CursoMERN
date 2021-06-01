@@ -17,17 +17,15 @@ DataSchema.pre('save', function(next){
     this.senha_usuario = bcrypt.hashSync(this.senha_usuario, 10);
     next();
 })
-// Descomentar trecho de código código caso seja necessário futuramente com problema de criptografia na atualização de senha
-// Se descomentar mudar em usuários.controller método findByIdAndUpdate na linha 36 para findOneAndUpdate na função Update (declaração da variável user)
 
 
-// DataSchema.pre('findOneAndUpdate', function(next){
-//     let password = this.getUpdate().senha_usuario+'';
-//     if(password.length<55){
-//         this.getUpdate().senha_usuario = bcrypt.hashSync(password, 10);
-//     }
-//     next();
-// })
+DataSchema.pre('findOneAndUpdate', function(next){
+    let password = this.getUpdate().senha_usuario+'';
+    if(password.length<55){
+        this.getUpdate().senha_usuario = bcrypt.hashSync(password, 10);
+    }
+    next();
+})
 
 const usuarios = mongoose.model('Usuarios', DataSchema);
 module.exports = usuarios;

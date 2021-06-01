@@ -1,40 +1,40 @@
-const Usuario = require('../models/usuario.model');
+const Produto = require('../models/produto.model');
 
 
 module.exports = {
     async index(req, res) {
-        const user = await Usuario.find();
-        res.json(user);
+        const product = await Produto.find();
+        res.json(product);
     },
     async create(req, res){
-        const {nome_usuario, email_usuario, tipo_usuario, senha_usuario} = req.body;
+        const {nome_produto, descricao_produto, preco_produto, qtd_produto} = req.body;
         let data = {};
-        let user = await Usuario.findOne({email_usuario});
+        let product = await Produto.findOne({nome_produto});
         
-        if(!user){
-            data = {nome_usuario, email_usuario, tipo_usuario, senha_usuario};
+        if(!product){
+            data = {nome_produto, descricao_produto, preco_produto, qtd_produto};
             
-            user = await Usuario.create(data);
-            return res.status(200).json(user);
+            product = await Produto.create(data);
+            return res.status(200).json(product);
         } else {
-            return res.status(500).json(user);
+            return res.status(500).json(product);
         }
     },
     async details(req, res) {
         const {_id} = req.params;
-        const user = await Usuario.findOne({_id});
-        res.json(user);
+        const product = await Produto.findOne({_id});
+        res.json(product);
     },
     async delete(req, res) {
         const {_id} =req.params;
-        const user = await Usuario.findByIdAndDelete({_id});
-        return res.json(user);
+        const product = await Produto.findByIdAndDelete({_id});
+        return res.json(product);
     },
     async update(req, res) {
-        const {_id, nome_usuario, email_usuario, tipo_usuario} = req.body;
-        const data = {nome_usuario, email_usuario, tipo_usuario};
-        const user = await Usuario.findByIdAndUpdate({_id}, data);
-        res.json(user);
+        const {_id, nome_produto, descricao_produto, preco_produto, qtd_produto} = req.body;
+        const data = {nome_produto, descricao_produto, preco_produto, qtd_produto};
+        const product = await Produto.findByIdAndUpdate({_id}, data);
+        res.json(product);
     }
 
 }
