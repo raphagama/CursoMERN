@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "client": "yarn start --prefix client",
+    "client": "npm start --prefix client",
     "server": "nodemon server.js",
-    "dev": "concurrently \"yarn run server\" \"yarn run client\" "
+    "dev": "concurrently \"yarn run server\" \" yarn run client\""
   },
   "license": "MIT",
   "dependencies": {
@@ -13,7 +13,9 @@
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
+    "create-react-app": "^4.0.3",
     "express": "^4.17.1",
+    "global": "^4.4.0",
     "mongoose": "^5.12.10",
     "path": "^0.12.7"
   },
