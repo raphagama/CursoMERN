@@ -1,5 +1,5 @@
 import React from 'react';
-import { mainListItems, secondaryListItems } from './list-menu-admin'
+import { mainListItems, secondaryListItems } from './list-menu-admin';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';

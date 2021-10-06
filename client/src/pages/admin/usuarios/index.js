@@ -68,7 +68,7 @@ export default function UsuariosListagem() {
   async function handleDelete(id){
    if(window.confirm("Deseja realmente excluir este ususário?")){
       var result = await api.delete('/api/usuarios/'+id);
-      if(result.status == 200){
+      if(result.status === 200){
         window.location.href = '/admin/usuarios';
        } else {
         alert('Ocorreu um erro, por favor tente novamente.')
