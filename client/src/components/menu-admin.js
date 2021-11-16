@@ -12,6 +12,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import clsx from 'clsx';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import { getNomeUsuario } from '../services/auth';
+import logoSistema from '../assets/img/logo1.png';
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
@@ -105,6 +107,7 @@ export default function MenuAdmin({title}){
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
             {title}
           </Typography>
+          {getNomeUsuario()}
         </Toolbar>
       </AppBar>
         <Drawer
@@ -115,6 +118,7 @@ export default function MenuAdmin({title}){
         open={open}
       >
         <div className={classes.toolbarIcon}>
+          <img style={{width:150, height: 50}} src={logoSistema} alt= "Logo EBD" />
           <IconButton onClick={handleDrawerClose}>
             <ChevronLeftIcon />
           </IconButton>
