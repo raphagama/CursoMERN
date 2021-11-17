@@ -12,7 +12,7 @@ import InputLabel from '@material-ui/core/InputLabel';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 import Button from '@material-ui/core/Button';
-import SaveIcon from '@material-ui/icons/Save';
+
 
 import api from '../../../services/api'
 
@@ -145,7 +145,8 @@ export default function UsuarioCadastrar() {
                         onChange={e => setTipo(e.target.value)}
                       >
                         <MenuItem value={1}>Administrador</MenuItem>
-                        <MenuItem value={2}>Funcionário</MenuItem>
+                        <MenuItem value={2}>Gerente</MenuItem>
+                        <MenuItem value={3}>Funcionário</MenuItem>
                       </Select>
                     </FormControl>
                   </Grid>
