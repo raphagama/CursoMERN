@@ -12,7 +12,14 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
-//import { application } from 'express';
+import FormControl from '@material-ui/core/FormControl';
+import InputLabel from '@material-ui/core/InputLabel';
+import Input from '@material-ui/core/Input';
+import InputAdornment from '@material-ui/core/InputAdornment';
+import IconButton from '@material-ui/core/IconButton';
+import Visibility from '@material-ui/icons/Visibility';
+import VisibilityOff from '@material-ui/icons/VisibilityOff';
+// //import { application } from 'express';
 
 import api from '../../../services/api';
 
@@ -35,28 +42,29 @@ const theme = createTheme();
 
 export default function SignIn() {
 
-    const [ email, setEmail ] = useState('');
-    const [ senha, setSenha] = useState('');
+  const [email, setEmail] = useState('');
+  const [senha, setSenha] = useState('');
+  const [showPassword, setShowPassword ] = useState(false);
 
 
-   async function handleSubmit(){
-        await api.post('/api/usuarios/login',{email, senha})
-        .then(res => {
-          if(res.status===200){
-            if(res.data.status===1){
-              login(res.data.token);
-              setIdUsuario(res.data.id_client);
-              setNomeUsuario(res.data.user_name);
+  async function handleSubmit() {
+    await api.post('/api/usuarios/login', { email, senha })
+      .then(res => {
+        if (res.status === 200) {
+          if (res.data.status === 1) {
+            login(res.data.token);
+            setIdUsuario(res.data.id_client);
+            setNomeUsuario(res.data.user_name);
 
-              window.location.href= '/admin'
-            } else if (res.data.status === 2){
-              alert('Atenção: '+res.data.error);
-            }
-          } else {
-            alert('Erro no servidor');
+            window.location.href = '/admin'
+          } else if (res.data.status === 2) {
+            alert('Atenção: ' + res.data.error);
           }
-        })
-    }
+        } else {
+          alert('Erro no servidor');
+        }
+      })
+  }
 
   return (
     <ThemeProvider theme={theme}>
@@ -89,7 +97,7 @@ export default function SignIn() {
               value={email}
               onChange={e => setEmail(e.target.value)}
             />
-            <TextField
+            {/* <TextField
               margin="normal"
               required
               fullWidth
@@ -100,7 +108,28 @@ export default function SignIn() {
               autoComplete="current-password"
               value={senha}
               onChange={e => setSenha(e.target.value)}
-            />
+            /> */}
+            <FormControl sx={{ m: 1, width: '25ch' }} variant="standard" style={{width: '100%', marginTop: 10}}>
+              <InputLabel htmlFor="campoSenha">Digite sua senha</InputLabel>
+              <Input
+                id="campoSenha"
+                type={showPassword ? 'text' : 'password'}
+                value={senha}
+                onChange={e => setSenha(e.target.value)}
+                endAdornment={
+                  <InputAdornment position="end">
+                    <IconButton
+                      aria-label="toggle password visibility"
+                      onClick={e => setShowPassword(!showPassword)}
+                      edge="end"
+                    >
+                      {showPassword ? <VisibilityOff /> : <Visibility />}
+                    </IconButton>
+                  </InputAdornment>
+                }
+                labelWidth={120}
+              />
+            </FormControl>
             <FormControlLabel
               control={<Checkbox value="remember" color="primary" />}
               label="Lembrar-me"

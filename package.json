@@ -9,6 +9,8 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@material-ui/icons": "^4.11.2",
+    "@mui/icons-material": "^5.1.1",
     "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
@@ -17,6 +19,7 @@
     "express": "^4.17.1",
     "global": "^4.4.0",
     "jsonwebtoken": "^8.5.1",
+    "material-ui": "^0.20.2",
     "mongoose": "^5.12.10",
     "path": "^0.12.7"
   },
