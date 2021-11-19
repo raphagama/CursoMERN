@@ -149,6 +149,9 @@ export default function UsuarioCadastrar() {
                     <Button variant="contained" color="primary" onClick={handleSubmit}>
                       Salvar
                     </Button>
+                    <Button variant="contained" color="default"href = {'/admin/usuarios/'}>
+                      Cancelar
+                    </Button>
                   </Grid>
                 </Grid>
               </Paper>
