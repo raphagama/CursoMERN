@@ -81,9 +81,9 @@ Mencione as ferramentas que você usou para criar seu projeto
 
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/31085966?v=4" width="100px;" alt=""/>
  <br />
- <sub><b>Raphael Gama</b></sub>
+ <h1><sub><b>[Raphael Gama](https://github.com/raphagama)</b></sub></h1>
 
 Feito com muito esforço 🦾 por [Raphael Gama](https://github.com/raphagama) 👋🏽 Entre em contato!
 
 [![Twitter Badge](https://img.shields.io/badge/-@rapha_gama-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/rapha_gama)](https://twitter.com/rapha_gama) [![Linkedin Badge](https://img.shields.io/badge/-Raphael-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/raphael-gama-a804a4112)](https://www.linkedin.com/in/raphael-gama-a804a4112) 
-[![Outlook Badge]https://img.shields.io/badge/Raphael _Gama-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white](mailto:raphaelgama@outlook.com)]
+[![Outlook Badge](https://img.shields.io/badge/Raphael_Gama-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white](mailto:raphaelgama@outlook.com)]
