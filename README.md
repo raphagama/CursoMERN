@@ -3,11 +3,11 @@
 ## 📜 Descrição 
 Este projeto é resultado do curso [Básico de MERN](https://youtube.com/playlist?list=PLf7vZ02bgXGWPYTDBP8Bd8C1rLqj0BRV3), disponível no Youtube, ministrado por [Daniel Correa](https://github.com/daniel-2010).
 Trata-se de um curso onde aprendenmos a utilizar a stack MERN (Mongo, Express, React e Node) criando a um CRUD de usuários utilizando de várias ferramenteos importantes. 
-O sistema além de possuir todas as características de um CRUD, também possui um sistema de autenticação via token que juguei ser um bônus. Foi um excelente aprendizado e espero que fique claro para analisar o código.
+O sistema além de possuir todas as características de um CRUD, também possui um sistema de autenticação via token que julguei ser um bônus. Foi um excelente aprendizado e espero que fique claro para analisar o código.
 
 ## 🚀 Começando
 
-Para relizar o clone no localmente basta fazer o download dos projeto ou realizar o clone normalmente via git.
+Para relizar ter o projeto localmente basta fazer o download do ou realizar o clone normalmente via git.
 ```
 git clone
 ```
@@ -52,11 +52,8 @@ $ npm run dev:server
 
 ## 🛠️ Construído com
 
-Mencione as ferramentas que você usou para criar seu projeto
-
 * [Express](https://expressjs.com/pt-br/) - O framework usado.
 * [Material UI](http://www.dropwizard.io/1.0.2/docs/) - Componentes usados.
-* [Bcrypt](https://maven.apache.org/) - Biblioteca para senhas.
 * [Mongo DB](https://www.mongodb.com/) - Banco de Dados.
 
 # 🏴 Dependências
@@ -79,7 +76,7 @@ Mencione as ferramentas que você usou para criar seu projeto
 ### Autor
 ---
 
- <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/31085966?v=4" width="100px;" alt=""/>
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/31085966?v=4" width="300px;" alt=""/>
  <h2><sub><b><a href:"https://github.com/raphagama">Raphael Gama</a></b></sub></h2>
 
 Feito com muito esforço 🦾 por [Raphael Gama](https://github.com/raphagama) 👋🏽 Entre em contato!
