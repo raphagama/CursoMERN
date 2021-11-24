@@ -1,7 +1,7 @@
 # CRUD MERN
 
 ## 📜 Descrição 
-Este projeto é resultado do curso [Básico de MERN]((https://youtube.com/playlist?list=PLf7vZ02bgXGWPYTDBP8Bd8C1rLqj0BRV3), disponível no Youtube, ministrado por [Daniel Correa](https://github.com/daniel-2010).
+Este projeto é resultado do curso [Básico de MERN](https://youtube.com/playlist?list=PLf7vZ02bgXGWPYTDBP8Bd8C1rLqj0BRV3), disponível no Youtube, ministrado por [Daniel Correa](https://github.com/daniel-2010).
 Trata-se de um curso onde aprendenmos a utilizar a stack MERN (Mongo, Express, React e Node) criando a um CRUD de usuários utilizando de várias ferramenteos importantes. 
 O sistema além de possuir todas as características de um CRUD, também possui um sistema de autenticação via token que juguei ser um bônus. Foi um excelente aprendizado e espero que fique claro para analisar o código.
 
@@ -86,4 +86,4 @@ Mencione as ferramentas que você usou para criar seu projeto
 Feito com muito esforço 🦾 por [Raphael Gama](https://github.com/raphagama) 👋🏽 Entre em contato!
 
 [![Twitter Badge](https://img.shields.io/badge/-@rapha_gama-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/rapha_gama)](https://twitter.com/rapha_gama) [![Linkedin Badge](https://img.shields.io/badge/-Raphael-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/raphael-gama-a804a4112)](https://www.linkedin.com/in/raphael-gama-a804a4112) 
-[![Outlook Badge](https://img.shields.io/badge/-raphaelgama@outlook.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:tgmarinho@gmail.com)](mailto:tgmarinho@gmail.com)
+[![Outlook Badge]https://img.shields.io/badge/Raphael _Gama-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white](mailto:raphaelgama@outlook.com)]
