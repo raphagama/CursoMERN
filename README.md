@@ -80,7 +80,7 @@ Mencione as ferramentas que você usou para criar seu projeto
 ---
 
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/31085966?v=4" width="100px;" alt=""/>
- <h3><sub><b><a href:"https://github.com/raphagama">Raphael Gama</a></b></sub></h3>
+ <h2><sub><b><a href:"https://github.com/raphagama">Raphael Gama</a></b></sub></h2>
 
 Feito com muito esforço 🦾 por [Raphael Gama](https://github.com/raphagama) 👋🏽 Entre em contato!
 
