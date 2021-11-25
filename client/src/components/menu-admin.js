@@ -13,7 +13,7 @@ import Typography from '@material-ui/core/Typography';
 import clsx from 'clsx';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { getNomeUsuario } from '../services/auth';
-import logoSistema from '../assets/img/logo1.png';
+import logoSistema from '../assets/img/logo.png';
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
