@@ -25,7 +25,7 @@ export default function Routes(){
             <Switch>
 
                 {/* Rotas Admin */}
-                <Route path="/admin/login" exact component={Login} />
+                <Route path="/" exact component={Login} />
                 <PrivateRoute path="/admin" exact component={Dashboard} />                
                 <PrivateRoute path="/admin/produtos" exact component={Produtos} />
                 <PrivateRoute path="/admin/produtos/cadastrar" exact component={ProdutoCadastrar} />
@@ -36,7 +36,7 @@ export default function Routes(){
                 <PrivateRoute path="/admin/usuarios/editar/:idUsuario" exact component={UsuarioEditar} />
 
                 {/* Rotas Client */}
-                <Route path="/" exact component={Home} />
+                //<Route path="/" exact component={Home} />
                 <Route path="/produtos/:idProduto" exact component={ProdutoDetails} />
 
             </Switch>
